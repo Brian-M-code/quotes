@@ -14,11 +14,6 @@ export class QuoteDetailComponent implements OnInit {
     this.isComplete.emit(complete);
   }
   
-  // newQuote = new Quotes("", "", new Date());
-  // @Output() AddQuote = new EventEmitter<Quotes>();
-  // submitQuote(){
-  //   this.AddQuote.emit(this.newQuote);
-  //   this.newQuote = new Quotes("","",new Date());
   
 
 

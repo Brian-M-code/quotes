@@ -3,36 +3,36 @@
 
 <head>
     <title>Quote App</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
     <h1> Quote App </h1>
     <hr>
-    <div class="row">
-        <div class="col-md-6">
-            <div *ngFor='let quote of quotes; let i=index'>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div *ngFor='let quote of quotes; let i=index'>
 
-                <ul>
-                    <li appHighlight>{{quote.quote}} <br>
-                        {{quote.author}}
-                        <ul>
-                            <button (click)="addLikeVotes(i)"><i class="fas fa-heart"></i></button>{{quote.likeVotes}}
-                            <button (click)="addDislikeVotes(i)"><i
-                                    class="fas fa-heart"></i></button>{{quote.dislikeVotes}}
-                        </ul>
-                        <button (click)="displayDetails(i)" class="btn btn-outline-info">Quote Details</button>
-                        <app-quote-detail [quote]='quote'></app-quote-detail>
-                    </li>
-                </ul>
-
-
-
+                    <ul>
+                        <li appHighlight>{{quote.quote}} <br>
+                            {{quote.author}}
+                            <ul>
+                                <button (click)="addLikeVotes(i)"><i
+                                        class="fas fa-heart"></i></button>{{quote.likeVotes}}
+                                <button (click)="addDislikeVotes(i)"><i
+                                        class="fas fa-heart"></i></button>{{quote.dislikeVotes}}
+                            </ul>
+                            <button (click)="displayDetails(i)" class="btn btn-outline-info">Quote Details</button>
+                            <app-quote-detail [quote]='quote'></app-quote-detail>
+                        </li>
+                    </ul>
+                </div>
             </div>
-
-        </div>
-        <div class="col-md-6">
-            
+            <div class="col-md-6">
+                <app-quote-form></app-quote-form>
+            </div>
         </div>
     </div>
 
