@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <title>Quote App</title>
+    <title>Quote App</title>
 </head>
+
 <body>
     <h1> Quote App </h1>
     <hr>
@@ -11,10 +13,15 @@
             <div *ngFor='let quote of quotes; let i=index'>
                 {{quote.quote}}
                 {{quote.author}}
+                <button (click)='displayDetails(i)' class=btn btn->Quote Details</button>
+                <button (click)=addLikeVotes(i)>Like</button>
+                <button (click)=addDislikeVotes(i)>Dislike</button>
 
             </div>
+
         </div>
     </div>
-    
+
 </body>
+
 </html>

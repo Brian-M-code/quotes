@@ -32,7 +32,7 @@ deleteQuote(isComplete, index){
   }
 
 }
-
+toggleDetails
 addLikeVotes(i){
   this.quotes[i].likeVotes+=1;
 }
