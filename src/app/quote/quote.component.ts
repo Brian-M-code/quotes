@@ -15,6 +15,7 @@ export class QuoteComponent implements OnInit {
     new Quote('Tomashi','To get to Heaven you start from hell',new Date(2019,1,12)),
     new Quote('Mutuma','Dreaming without actualizing the dream is bullshit',new Date(2019,1,12)),
   ];
+  
 addNewQuote(quote){
   quote.completeDate = new Date(quote.completeDate)
   this.quotes.push(quote)
@@ -32,7 +33,7 @@ deleteQuote(isComplete, index){
   }
 
 }
-toggleDetails
+
 addLikeVotes(i){
   this.quotes[i].likeVotes+=1;
 }

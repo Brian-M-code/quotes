@@ -8,33 +8,35 @@
 </head>
 
 <body>
+    
     <h1> Quote App </h1>
     <hr>
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-6">
                 <div *ngFor='let quote of quotes; let i=index'>
-
+                    <p appHighlight>{{quote.quote}} <br>
+                        {{quote.author}}
+                    </p>
                     <ul>
-                        <li appHighlight>{{quote.quote}} <br>
-                            {{quote.author}}
-                            <ul>
-                                <button (click)="addLikeVotes(i)"><i
-                                        class="fas fa-heart"></i></button>{{quote.likeVotes}}
-                                <button (click)="addDislikeVotes(i)"><i
-                                        class="fas fa-heart"></i></button>{{quote.dislikeVotes}}
-                            </ul>
-                            <button (click)="displayDetails(i)" class="btn btn-outline-info">Quote Details</button>
-                            <app-quote-detail [quote]='quote'></app-quote-detail>
-                        </li>
+                        <button (click)="addLikeVotes(i)"><i class="fas fa-heart"></i></button>{{quote.likeVotes}}
+                        <button (click)="addDislikeVotes(i)"><i
+                                class="fas fa-thumbs-down"></i></button>{{quote.dislikeVotes}}
                     </ul>
-                </div>
+                    <button (click)="displayDetails(i)" class="btn btn-outline-info">Quote Details</button>
+                    <div>
+                        <app-quote-detail *ngIf="quote.showQuotes" [quote]='quote' (isComplete)="deleteQuote($event, i)">
+                        </app-quote-detail>
+                    </div>
+                </div> 
             </div>
             <div class="col-md-6">
-                <app-quote-form></app-quote-form>
+                <app-quote-form (AddQuote)="addNewQuote($event)"></app-quote-form>
             </div>
+           
         </div>
-    </div>
+         </div>
+
 
 </body>
 
