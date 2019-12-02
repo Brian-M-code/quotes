@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Quote App</title>
+</head>
+<body>
+    <h1> Quote App </h1>
+    <hr>
+    <div class="row">
+        <div class="col-md-6">
+            <div *ngFor='let quote of quotes; let i=index'>
+                {{quote.quote}}
+            </div>
+            <div>
+                {{quote.author}}
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
