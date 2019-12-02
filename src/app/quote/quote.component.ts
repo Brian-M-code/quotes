@@ -15,7 +15,7 @@ export class QuoteComponent implements OnInit {
     new Quote('Tomashi','To get to Heaven you start from hell',new Date(2019,1,12)),
     new Quote('Mutuma','Dreaming without actualizing the dream is bullshit',new Date(2019,1,12)),
   ];
-  
+
 addNewQuote(quote){
   quote.completeDate = new Date(quote.completeDate)
   this.quotes.push(quote)
@@ -25,7 +25,7 @@ displayDetails(index){
 }
 deleteQuote(isComplete, index){
   if(isComplete){
-    let toDelete=confirm('Are you sure you wanna delete'+ this.quotes[index] .quote +'?')
+    let toDelete=confirm('Are you sure you wanna delete'+ this.quotes[index] .inspquote +'?')
 
     if(toDelete){
       this.quotes.splice(index,1)

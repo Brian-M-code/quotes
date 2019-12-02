@@ -3,7 +3,7 @@ export class Quote {
     likeVotes: number;
     dislikeVotes:number;
 
-    constructor(public author:string, public quote: string, public complete:Date)
+    constructor(public author:string, public inspquote: string, public complete:Date)
     {
         this.showQuotes= false;
         this.likeVotes=0;
