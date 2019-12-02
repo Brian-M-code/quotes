@@ -11,8 +11,9 @@
     <div class="row">
         <div class="col-md-6">
             <div *ngFor='let quote of quotes; let i=index'>
-                {{quote.quote}}
+                <ul><li appHighlight>{{quote.quote}}
                 {{quote.author}}
+                <app-quote-detail [quote]='quote'></app-quote-detail></li></ul>
                 <button (click)='displayDetails(i)' class=btn btn->Quote Details</button>
                 <button (click)=addLikeVotes(i)>Like</button>
                 <button (click)=addDislikeVotes(i)>Dislike</button>

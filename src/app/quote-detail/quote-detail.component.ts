@@ -8,11 +8,11 @@ import { EventEmitter } from 'events';
   styleUrls: ['./quote-detail.component.css']
 })
 export class QuoteDetailComponent implements OnInit {
-  @Input()quote:Quotes;
+  @Input()quote:Quote;
   @Output() isComplete = new EventEmitter<boolean>();
 
   quoteDelete(complete:boolean){
-    this.isComplete.emit(complete)
+    this.isComplete.emit(complete);
   }
 
   // newQuote = new Quotes("", "", new Date());
@@ -23,9 +23,7 @@ export class QuoteDetailComponent implements OnInit {
   
 
 
-  constructor() { }
+constructor() { }
 
-  ngOnInit() {
-  }
-
+ngOnInit() { }
 }

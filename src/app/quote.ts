@@ -5,6 +5,7 @@ export class Quote {
 
     constructor(public author:string, public quote: string, public complete:Date)
     {
+        this.showQuotes= false;
         this.likeVotes=0;
         this.dislikeVotes=0;
     }
