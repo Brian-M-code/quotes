@@ -9,6 +9,7 @@ import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { HighlightDirective } from './highlight.directive';
 import { PostTimePipe } from './post-time.pipe';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
+import { MomentModule } from 'ngx-moment';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { QuoteFormComponent } from './quote-form/quote-form.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    MomentModule
   ],
   providers: [],
   bootstrap: [AppComponent]
