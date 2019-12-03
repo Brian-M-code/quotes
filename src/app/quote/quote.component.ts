@@ -8,11 +8,11 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes:Quote []= [
-    new Quote('Brian','Y.O.L.O (you only live once, live)', new Date(2019,1,12)),
-    new Quote('Einstein','Great things never come from comfort zones',new Date(2019,1,12)),
-    new Quote('Beyonce','Girls run the world, if you know you know',new Date(2019,1,12)),
-    new Quote('Drake','Gods plan is the best, Kikis will kill you',new Date(2019,1,12)),
-    new Quote('Tomashi','To get to Heaven you start from hell',new Date(2019,1,12)),
+    new Quote('Brian','Y.O.L.O (you only live once, live life to the best you can..Friend.)', new Date(2019,10,12)),
+    new Quote('Einstein','Great things never come from comfort zones',new Date(1943,12,1)),
+    new Quote('Beyonce','Girls run the world, if you know you know',new Date(2016,9,12)),
+    new Quote('Drake','Gods plan is the best, Kikis will kill you',new Date(2018,6,12)),
+    new Quote('Tomashi','To get to Heaven you start from hell',new Date(2019,10,18)),
     ];
 
 addNewQuote(quote){

@@ -59,8 +59,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Live link
 
 ## Reach me @
-mutuma.brian@yahoo.com
+Incase of any inquiry contact me via
+- Email: mutuma.brian@yahoo.com
 
 ## License 
 
-- Copyright @ **Brian-M-Code**
+- Copyright (c) **Brian-M-Code** @2019
