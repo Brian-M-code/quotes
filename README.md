@@ -30,9 +30,9 @@ An angular app where one can upload quotes, like or dislike the quote.
 | Quote                    | Type your quote in the quote text area                  |
 |                          |                                                         |
 | Author                   | Type the author of the author or who said it            |
-|--------------------------| --------------------------------------------------------|
+|                          |                                                         |
 | Behaviour                | Description                                             |
-|--------------------------|---------------------------------------------------------|
+|                          |                                                         |
 | Click post               | Will post your name, quote and author to other quotes   |
 |                          |                                                         |
 | Click Quote details      | To view when it was posted                              |                                        |                          |                                                         |
