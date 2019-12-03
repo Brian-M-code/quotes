@@ -21,6 +21,7 @@ An angular app where one can upload quotes, like or dislike the quote.
 ## BDD
 
 
+
 ### Development
 - To fix a bug or enhance a module, do:
 
