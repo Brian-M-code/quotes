@@ -1,6 +1,35 @@
-# Quotes App
+# Project Name.
+- Quotes App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
+# Author.
+**Brian Mutuma**
+
+## Description 
+
+An angular app where one can upload quotes, like or dislike the quote.
+
+### Technologies used
+- Project generated with Angular CLI version 7.1.4
+- HTML & CSS (Bootstrap)
+
+## Setup Information
+- Clone the repository to local machine
+- In the terminal, cd to the root folder of the application
+- Run ng serve command
+- Navigate to the https://localhost:4200 in your browser.
+
+## BDD
+
+
+### Development
+- To fix a bug or enhance a module, do:
+
+1. Fork the repo
+2. Create a new branch (git checkout -b improve-feature)
+3. Make the appropriate changes in the file.
+4. Add changes to reflect the changes made
+5. Commit your changes 
+
 
 ## Development server
 
@@ -24,4 +53,13 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md). 
+
+## Live link
+
+## Reach me @
+mutuma.brian@yahoo.com
+
+## License 
+
+- Copyright @ **Brian-M-Code**
