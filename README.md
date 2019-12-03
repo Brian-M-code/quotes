@@ -18,7 +18,8 @@ An angular app where one can upload quotes, like or dislike the quote.
 - Run ng serve command
 - Navigate to the https://localhost:4200 in your browser.
 
-
+##### Application screenshot
+![screenshot](src/assets/images/quote.png)
 
 ## BDD
 
