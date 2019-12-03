@@ -18,7 +18,26 @@ An angular app where one can upload quotes, like or dislike the quote.
 - Run ng serve command
 - Navigate to the https://localhost:4200 in your browser.
 
+
+
 ## BDD
+
+| Inputs.                  | Description.                                            |
+|--------------------------|---------------------------------------------------------|
+| Your Name                | The name of the person wanting to post the quote        |
+|                          |                                                         |
+| Quote                    | Type your quote in the quote text area                  |
+|                          |                                                         |
+| Author                   | Type the author of the author or who said it            |
+|--------------------------| --------------------------------------------------------|
+| Behaviour                | Description                                             |
+|--------------------------|---------------------------------------------------------|
+| Click post               | Will post your name, quote and author to other quotes   |
+|                          |                                                         |
+| Click Quote details      | To view when it was posted                              |                                        |                          |                                                         |
+| Click delete             | To delete a quote                                       |
+|                          |                                                         |
+| click heart or thumb down| To like or dislike a quote                              |
 
 
 
