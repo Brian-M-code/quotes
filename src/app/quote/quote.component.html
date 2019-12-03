@@ -11,12 +11,13 @@
 
     <h1> Quote App </h1>
     <hr>
+    <br>
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-6">
                 <div *ngFor='let quote of quotes; let i=index'>
                     <p appHighlight>{{quote.inspquote}} <br>
-                        {{quote.author}}
+                        Author: {{quote.author}}
                     </p>
                     <ul>
                         <button (click)="addLikeVotes(i)"><i class="fas fa-heart"></i></button>{{quote.likeVotes}}
@@ -30,7 +31,7 @@
                     </div>
                 </div> 
             </div>
-            <div class="col-md-6">
+            <div id="new" class="col-md-6">
                 <app-quote-form (AddQuote)="addNewQuote($event)"></app-quote-form>
             </div>
            
